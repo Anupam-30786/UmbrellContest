@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Custom Umbrella </title>
+  
+    <link rel="stylesheet" href="./index.css">  
+   
+</head>
+ 
+<body>
+   
+    <div class="row" style="align-items: center;margin-top: 200px; margin-left: 150px;">
+        <div class="col-5 menu" style="display: flex;flex-direction: column ;justify-content: center;align-items: center ;margin-right: 0px !important;">
+            <img class="umbrella" id="umbrellaimg" src="./Umbrella project assets/Pink umbrella.png " style="height: -webkit-fill-available !important;"/>
+            <img class="over" id="logoimage" style="align-self: bottom;"/>
+        </div>
+      
+        <div class="col-5 menu" style="display: flex;flex-direction: column;">
+            <h2 style="margin-left: 120px;">Custom Umbrella</h2>
+            <div style="display: flex;justify-content: center; align-self:baseline; margin-left: 70px;">
+                <div class="circle" id="pinkUmbrella" style="background-color: pink; margin-left: 45px;"> </div>
+                <div class="circle" id="blueUmbrella" style="background-color: blue;"> </div>
+                <div class="circle" id="yellowUmbrella" style="background-color: yellow;"> </div>
+            </div> 
+            <h5 style="margin-left: 120px;margin-bottom: inherit;">Customise your Umbrella</h5>
+            <p style="margin-left: 120px;margin-top: 0px !important;font-size: small;margin-bottom: inherit;">Upload a logo for an instant preview</p>
+            <p style="margin-left: 120px;margin-top: 0px !important;font-size: small;">png and .jpg file only</p>
+            <div class="imagepicker" id="imagepicker" style="display: flex;align-items: center;">
+                <img id="uploade" onclick="clickfilePicker()" src="./Umbrella project assets/upload_icon.svg" style="height:-webkit-fill-available !important ; width: 30px; margin: 4px;"/>   
+                <input type="file" id="file" placeholder="Upload" style="text-align: center; font-weight:bold ;margin-left: 30px;" onchange="uploadImage(this)"> </input>
+            </div>  
+        </div>
+      </div>
+      
+
+ 
+</body>
+<Script src="./index.js"></Script>
+</html>
